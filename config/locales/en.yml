@@ -312,7 +312,7 @@ en:
       start: Start searching...
   landing:
     about: "You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to 5N.
+    welcome: Welcome to Codly.
     video:
     upgrade: Show me how to upgrade to 2.0!
     version: We've released a new version of Greenlight, but your database isn't compatible.
