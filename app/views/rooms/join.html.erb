@@ -13,7 +13,7 @@
 # with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 %>
 
-<% content_for(:page_desc) { t("room.invitation_description", name: @room.name) } %>
+<% content_for(:page_desc) { t("room.invitation_description", name: @room.name, linkUserId: @linkUserId, linkIdIsBlank: @linkIdIsBlank) } %>
 
 <% valid_access_code = @room.access_code.nil? || @room.access_code.empty? || @room.access_code == session[:access_code] %>
 <%= render 'rooms/components/room_event', render_recordings: valid_access_code do %>
@@ -41,7 +41,7 @@
             required: true,
             class: "form-control join-form",
             placeholder: t("enter_your_name"),
-            value: "#{@name}",
+            value: "#{@linkIdIsBlank?@name:@linkUserId}",
             readonly: !current_user.nil?, 
             autofocus: true
             %>

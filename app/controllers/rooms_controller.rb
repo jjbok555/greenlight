@@ -62,6 +62,8 @@ class RoomsController < ApplicationController
 
   # GET /:room_uid
   def show
+    @linkUserId = params[:linkUserId]
+    @linkIdIsBlank = @linkUserId.blank?
     @room_settings = JSON.parse(@room[:room_settings])
     @anyone_can_start = room_setting_with_config("anyoneCanStart")
     @room_running = room_running?(@room.bbb_id)
@@ -122,8 +124,16 @@ class RoomsController < ApplicationController
     cookies.encrypted[:greenlight_name] = @join_name unless cookies.encrypted[:greenlight_name] == @join_name
 
     save_recent_rooms
+    @client_ip = request.remote_ip
+    #여기가 이름 찾아서 저장해야되는 위치
+    RoomLogData = RoomLog.new
+    RoomLogData.room_uid=@room.uid
+    RoomLogData.user_id=current_user.present? ? current_user.email : @join_name
+    RoomLogData.ip=@client_ip
+    RoomLogData.status="IN"
+    RoomLogData.save
 
-    logger.info "Support: #{current_user.present? ? current_user.email : @join_name} is joining room #{@room.uid}"
+    logger.info "Support: #{current_user.present? ? current_user.email : @join_name} is joining room #{@room.uid},  #{@client_ip}"
     join_room(default_meeting_options)
   end
 
@@ -309,6 +319,13 @@ class RoomsController < ApplicationController
   # GET /:room_uid/logout
   def logout
     logger.info "Support: #{current_user.present? ? current_user.email : 'Guest'} has left room #{@room.uid}"
+
+    logData = RoomLog.new
+    logData.room_uid=@room.uid
+    logData.user_id=current_user.present? ? current_user.email : "#{cookies.encrypted[:greenlight_name]}"
+    logData.ip="#{request.remote_ip}"
+    logData.status="OUT"
+    logData.save
 
     # Redirect the correct page.
     redirect_to @room

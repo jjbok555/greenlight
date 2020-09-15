@@ -1,0 +1,626 @@
+# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
+#
+# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
+#
+# This program is free software; you can redistribute it and/or modify it under the
+# terms of the GNU Lesser General Public License as published by the Free Software
+# Foundation; either version 3.0 of the License, or (at your option) any later
+# version.
+#
+# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License along
+# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+
+# Locale.
+
+ko:
+  activerecord:
+    attributes:
+      user:
+        accepted_terms: 이용약관 안내
+        email: 이메일
+        name: 사용자이름
+        password: 비밀번호
+        password_confirmation: 비밀번호 재입력
+    errors:
+      models:
+        user:
+          confirmation: 비밀번호가 일치하지 않습니다. 다시 입력해 주세요.
+  administrator:
+    site_settings:
+      authentication:
+        disabled: 사용불가
+        enabled: 사용가능
+        info: 인증된 사용자만 방에 참여할 수 있습니다. 관리자에게 문의해 주세요.
+        title: 방 인증이 필요합니다.
+        user-info: 이 방에 들어오려면 위에 서명을 해야 합니다.
+      branding:
+        change: 이미지 변경
+        info: 왼쪽 상단 모서리에 표시되는 브랜딩 이미지 변경
+        placeholder: 이미지 경로
+        title: 브랜딩 이미지
+        invalid: 주소가 잘못되었습니다.
+      legal:
+        change: 주소 변경
+        info: 페이지 하단에 나타나는 용어 링크 변경
+        placeholder: 용어 주소
+        title: 용어들
+        invalid: 주소가 잘못되었습니다.
+      privpolicy:
+        change: 주소 변경
+        info: 페이지 하단에 나타나는 개인 정보 보호 정책 링크 변경
+        placeholder: 개인정보 보호 정책 주소
+        title: 개인정보 보호정책
+        invalid: 주소가 잘못되었습니다.
+      cache:
+        info: 업데이트된 정보에 대한 저장된 제공자 캐시 지우기
+        title: 공급자 캐시 지우기
+        button: 캐시 지우기
+      clear_auth:
+        info: 다른 인증 방법을 사용하여 다시 로그인할 수 있는 사용자의 현재 인증된 사용자 지우기
+        title: 현재 인증된 사용자 지우기
+        button: 인증된 사용자 지우기
+      color:
+        info: 일반 색상을 변경하면 밝은테마와 어두운테마 둘 다 변경되며 그 이후에 밝은테마와 어두운테마를 개별적으로 변경할 수 있습니다.
+        title: 기본 색상
+        regular: 기본 테마
+        lighten: 밝은 테마
+        darken: 어두운 테마
+      log_level:
+        title: 기록 접근 레벨
+        information: 전체 배포의 로그 수준을 변경합니다.
+        debug: 디버그
+        info: 정보
+        warn: 경고
+        error: 에러
+        fatal: 치명적
+        unknown: 알 수 없음
+      recording_visibility:
+        info: 새 녹화에 대한 기본 녹음 기능을 설정합니다.
+        title: 기본 화면 기록
+        warning: 이 설정은 실행되지 않는 회의실에만 적용됩니다.
+      require_consent:
+        info: 이 설정을 통해 회의실 소유자가 기록할 수 있는 회의실을 지정할 수 있습니다. 녹음실에 가입하는 사용자는 가입하기 전에 동의를 해야 합니다.
+        title: 회의실 소유자 및 녹음 참여자의 동의가 필요합니다.
+      maintenance_banner:
+        info: 사용자에게 예정된 공지사항을 알리기 위한 배너를 표시합니다.
+        title: 유지관리 배너
+        display: 설정
+        clear: 초기화
+        time: "예: 12월 13일 업데이트 예정 @ 23:00 ET. 사용자들은 로그인하는 데 문제가 생길 수 있다."
+      preupload:
+        info: 사용자는 프리젠테이션을 해당 회의실의 기본 프리젠테이션으로 사용할 수 있음
+        title: 프리플로어 프리젠테이션 허용
+      registration:
+        info: 사용자가 웹 사이트에 등록하는 방법 변경
+        title: 등록 방법
+        methods:
+          approval: 승인/거부
+          invite: 초대를 통해 가입
+          open: 등록 열기
+      rooms:
+        info: 사용자가 가질 수 있는 회의실 수 제한(홈룸 포함)합니다. 이 설정은 관리자에게 적용되지 않습니다.
+        title: 사용자당 회의실 수
+      shared_access:
+        info: 사용 불가능으로 설정하면 회의실 옵션 드롭다운에서 단추가 제거되어 사용자가 회의실을 공유할 수 없습니다.
+        title: 사용자에게 회의실 공유 허용
+      subtitle: 사용자 지정
+      tabs:
+        appearance: 화면구성
+        administration: 관리자(소유자))
+        settings: 설정
+      title: 사이트 설정
+    flash:
+      approved: 사용자가 승인 되었습니다
+      banned: 사용자가 금지 되었습니다.
+      unbanned: 사용자의 금지가 해제되었습니다.
+      delete: 사용자가 삭제되었습니다.
+      delete_fail: 사용자 삭제가 실패했습니다.
+      demoted: 사용자가 강등되었습니다.
+      invite: 초대 이메일이 %{email} 주소로 전송되었습니다.
+      invite_email_verification: 이 방법을 사용하려면 이메일 사용이 가능해야 합니다. 시스템 관리자에게 문의하십시오.
+      merge_fail: 사용자 계정을 병합하는 동안 문제가 발생했습니다. 선택한 사용자를 확인하고 다시 시도하십시오.
+      merge_success: 사용자 계정이 병합되었습니다.
+      perm_deleted: 사용자가 영구적으로 삭제되었습니다.
+      promoted: 사용자 승격이 완료되었습니다.
+      registration_method_updated: 등록 방법이 성공적으로 업데이트 되었습니다.
+      reset_password: 사용자에게 암호를 재설정하기 위한 이메일이 전송되었습니다. 수신확인이 않되는 경우 스팸폴더를 확인하도록 요청해주세요.
+      restored: 사용자가 복원되었습니다.
+      room_configuration: 회의실 구성이 변경되었습니다.
+      settings: 사이트 설정이 변경되었습니다.
+      unauthorized: 이 사용자에 대해 작업을 수행할 수 있는 권한이 없습니다.
+    recordings:
+      title: 서버 레코딩 목록
+      no_recordings: 레코딩 항목이 없습니다.
+    roles:
+      appear_in_share_list: 공유 회의실의 드롭다운에 이 역할을 가진 사용자를 포함합니다.
+      can_create_rooms: 회의실을 만들 수 있습니다.
+      delete: 역할 삭제
+      invalid_create: 새로운 역할을 만드는 데 문제가 있었습니다. 역할 값을 확인한 후 다시 시도하십시오.
+      invalid_order: 역할의 우선 순위를 설정하는 중 문제가 발생했습니다. 값을 확인한 후 다시 시도하십시오.
+      invalid_update: 역할의 권한을 업데이트하는 동안 문제가 발생했습니다. 값을 확인한 후 다시 시도하십시오.
+      manage_rooms_recordings: 이 역할을 가진 사용자에게 서버 회의실 및 기록 관리를 허용합니다.
+      name: 역할 이름
+      new_role: 새로운 역할 생성
+      role_has_users: 이 역할은 %{user_count}개의 계정에 할당됩니다. 이 역할을 삭제하기 전에 이 역할에서 모든 계정을 제거하십시오.
+      title: 규칙들
+      promote_email: 사용자에게 이 역할이 할당될 때 이메일을 보냅니다.
+      demote_email: 이 역할에서 제거된 사용자에게 이메일을 보냅니다.
+      edit_site_settings: 이 역할을 가진 사용자가 사이트 설정을 편집할 수 있도록 허용합니다.
+      edit_roles: 이 역할을 가진 사용자가 다른 역할을 편집할 수 있도록 허용합니다.
+      manage_users: 이 역할을 가진 사용자에게 사용자 관리를 허용합니다.
+      invalid_assignment: 사용자에게 역할을 할당하는 동안 문제가 발생했습니다. 값을 확인한 후 다시 시도하십시오.
+      colour:
+        title: 역할 색상
+        info: 역할과 연관될 색상을 설정합니다.
+    room_configuration:
+      title: 회의실 구성
+      mute:
+        info: 사용자가 미팅에 참여할 때 자동으로 음소거처리를 합니다.
+      require_moderator:
+        info: 사용자가 참여를 시도할 때 미팅의 진행자에게 메시지를 표시합니다. 사용자가 승인되면 모임에 참여할 수 있습니다.
+      allow_any:
+        info: 사용자가 언제든지 미팅을 시작할 수 있도록 허용합니다. 기본적으로 회의실 소유자만 회의를 시작할 수 있습니다.
+      all_moderator:
+        info: 모든 사용자가 미팅에 참가할 때 의장 권한을 부여합니다.
+      recordings:
+        info: 회의실 소유자가 회의실을 기록할지 여부를 지정할 수 있습니다. 사용 가능으로 설정된 경우, 의장은 미팅이 시작된 후 "기록"(녹화) 단추를 눌러야 합니다.
+      options:
+        disabled: 사용불가
+        enabled: 항상허용
+        optional: 선택적허용
+    rooms:
+      title: 서버 회의실
+      table:
+        ended: "종료된 회의실: %{session}"
+        id: ID
+        not_running: 사용안함
+        participants: 참가자
+        running: 사용중
+        started: "시작된 회의실: %{session}"
+        status: 상태
+        view: 보기
+    title: 조직 설정
+    users:
+      invite: 사용자 초대
+      edit:
+        title: 사용자 세부항목 설정
+      settings:
+        approve: 승인
+        decline: 반려
+        ban: 사용자 금지
+        delete: 삭제
+        edit: 변경
+        edit_roles: 사용자 역할 변경
+        merge: 병합
+        perm_delete: 영구 삭제
+        unban: 금지 해제
+        undelete: 삭제 취소
+      table:
+        authenticator: 인증 관리자
+        created: 생성
+        name: 이름
+        not_found: 검색과 일치하는 사용자 없음
+        no_users: 사용자 검색결과 없음
+        role: 역할
+        uid: User ID
+        username: 사용자 이름
+      title: 사용자 관리
+  add_to_google_calendar: "구글 캘런더에 일정 추가"
+  bigbluebutton: 코들리 루프 (Codly Loop)
+  bigbluebutton_exception: 앗, 회의를 시작할 때 오류가 발생했습니다!
+  cancel: 취소
+  cookies:
+    cookie_info: 쿠키는 해당 서비스를 제공하는데 도움을 줍니다. 서비스를 원활하게 사용하려면, 쿠키 사용에 동의를 부탁합니다.
+    cookie_button: 동의함
+  copied: 복사함
+  copy: 복사
+  date:
+    month_names: [~, 1월, 2월, 3월, 4월, 5월, 6월, 7월, 8월, 9월, 10월, 11월, 12월]
+  default_admin: 이 계정의 기본 암호를 계속 사용하고 있는 경우, <a href="%{edit_link}">여기</a>를 클릭해서 비밀번호를 변경하세요.
+  delete: 삭제
+  delivery_error: 이메일을 발송하는 동안 오류가 발생했습니다. 관리자에게 문의하십시오!
+  docs: 문서화
+  email: 이메일
+  email_sent: 당신의 이메일 주소 %{email_type}로 전송했습니다! (메일이 확인되지 않는 경우 스팸메일함을 확인해 주세요.)
+  enter_your_name: 사용할 이름 입력
+  errors:
+    bigbluebutton:
+      help: 적절한 조치를 취했는지 확인하십시오. <a href="%{doc_link}">더 보기</a>
+      message: 잘못된 접근 및 암호입니다.
+      title: 서버 에러
+    internal:
+      message: 우리 쪽에서 뭔가 잘못 된 것 같습니다.
+      help: 오류가 기록되었으니, 한번 봅시다!
+      report: 보고서
+    maintenance:
+      message: 미안합니다만, 유지보수하러 왔습니다.
+      help: 금방 오겠습니다.
+    migration_error:
+      contact_admin: 관리자가 아닌 경우 관리자에게 문의하십시오.
+      continue: 나는 1.0을 계속 사용하고 싶다.
+      notice: >
+        Greenlight에서 데이터베이스 마이그레이션 오류가 발생함<br>
+        이것은 당신이 Greenlight 2.0으로 업데이트하지 않았기 때문일 것이다..
+      upgrade: 2.0으로 업그레이드하는 방법 보여줘!
+      version: Greenlight의 새로운 버전을 출시했지만, 당신의 데이터베이스는 호환되지 않습니다.
+    messages:
+      blank: 공백이 될 수 없습니다.
+      too_short: 너무 짧습니다.
+      invalid: 우효하지 않습니다.
+      taken: 이미 가져갔습니다.
+      accepted: 반드시 받아들여야 합니다.
+      confirmation: 일치하지 않습니다. %{attribute}
+      inclusion: 목록에 포함되지 않음
+    no_provider:
+      message: 액세스하려는 사이트가 활성화되지 않음
+      help: 시스템 관리자에게 문의하여 Greenlight를 설정하십시오.
+    not_found:
+      message: 찾고있는 페이지는 존재하지 않습니다.
+      help: 그것이 제거되었을 가능성이 있나요?
+      user_not_found:
+        help: 관리자에게 문의하십시오.
+        message: 죄송합니다, 이 사용자는 등록되지 않았습니다.
+      user_missing:
+        help: URL을 확인한 후 다시 시도하십시오.
+        message: 입력한 URL이 올바르지 않습니다.
+    title: Errors
+    unauthorized:
+      message: 이 응용 프로그램에 대한 액세스 권한이 없는 경우
+      help: 이것이 실수라고 생각되면 시스템 관리자에게 문의하십시오.
+  expired_reset_token: 비밀번호 재설정 링크가 만료됨!
+  features:
+    title: 특징
+    rooms: 개인맞춤 회의실
+    recordings: 기록 관리
+    designs: 디자인 수정
+    authentication: 사용자 인증
+  footer:
+    legal: 조건
+    privpolicy: 개인정보 이용약관
+    powered_by: Powered by 5N. (주)오앤
+  forgot_password:
+    subtitle: 비밀번호 분실
+    email: 이메일
+    submit: 제출
+  go_back: 뒤로가기
+  greenlight: 5N VCE
+  header:
+    all_recordings: 녹화목록
+    dropdown:
+      account_settings: 설정하기
+      help: 문의하기
+      home: 메인
+      settings: 관리자 설정
+      signout: 로그아웃
+  home_room: 기본 회의실
+  info_update_success: 정보가 업데이트 되었습니다.
+  invalid_credentials: 입력한 이메일과 비밀번호가 일치하지 않습니다. 다시 시도하거나 암호 재설정이 필요합니다.
+  invalid_login_method: 로그인에 실패했습니다. 최초 관리자 계정으로 로그인이 필요합니다.
+  invite_message: "회의에 초대하려면 다음 링크를 보내세요"
+  javascript:
+    room:
+      mailer:
+        subject: '녹화된 영상을 보여주기 위해 초대합니다.'
+        body: '녹화영상을 보려면 아래 링크를 클릭하십시오.:'
+        autogenerated: '이 이메일은 디지털대면 솔루션, 루프에서 자동생성 했습니다.'
+        footer: '루프(loop) 솔루션은 (주)오앤에서 개발, 운영하고 있는 디지털대면 솔루션 입니다. 자세한 사항은 www.5n.co.kr 로 접속하셔서 문의부탁드립니다.'
+    search:
+      start: 검색중...
+  landing:
+    about: "당신은 당신만의 회의실을 만들어 세션을 주최하거나 짧고 편리한 링크를 사용하여 다른 사람과 함께 회의를 할 수 있습니다."
+    welcome: 반갑습니다. 디지털대면 솔루션 '루프 (loop)' 입니다.
+    video:
+    upgrade:
+    version: 새로운 버전을 출시했지만, 당신의 데이터베이스는 호환되지 않습니다.
+  language_default: 기본언어설정 (브라우저 기본설정 언어)
+  ldap_error: LDAP 서버에 연결할 수 없습니다. 환경 파일에서 LDAP 구성을 확인하고 서버가 실행 중인지 확인하십시오.
+  login: 로그인
+  login_title: 로그인 합니다.
+  mailer:
+    user:
+      approve:
+        info: 당신의 계정은 이미 승인되었습니다.
+        signin: 개인 회의실에 액세스하려면 아래 단추를 클릭하고 로그인하십시오.
+        signin_link: 로그인
+        signup:
+          info: 새로운 사용자가 5N VCE 를 사용하기 위해 등록했습니다.
+          more-info: 이 사용자가 5N VCE 에 액세스할 수 있도록 하려면 조직 설정에서 계정을 승인해야 합니다.
+          admins_link: 구성원 관리 페이지 방문
+          subject: 5N VCE 신규 사용자 등록
+          username: 사용자 이름 %{name}(이), 이메일 %{email} (으)로 로그인 했습니다.
+        subject: 승인된 계정
+        username: 사용자 계정 이메일은 %{email}입니다.
+      demoted:
+        info: 당신은 더이상 %{url}에서 %{role}가 아닙니다.
+        more-info: 이제 일반 사용자와 동일한 권한을 가지십시오.
+        root_link: 로그인
+        subtitle: "%{role} 권한 취소됨"
+      invite:
+        info: 사용자 %{name} 이(가) 자신의 개인 회의실에 초대했습니다.
+        signup_info: 이메일을 사용하여 등록하려면 아래 단추를 클릭하고 단계를 실행하세요.
+        signup_link: 로그인
+        signup:
+          info: 5N VCE 를 사용하기 위해 초대받은 사용자가 등록했습니다.
+          admins_link: 구성원 관리 페이지 방문
+          subject: 5N VCE 신규 사용자 등록
+          username: 사용자 이름 %{name}(이), 이메일 %{email} (으)로 로그인 했습니다.
+        subject: 5N VCE에 가입 초대를 했습니다
+        username: 사용자 계정 이메일은 %{email}입니다.
+      password_reset:
+        title: '비밀번호 변경'
+        welcome: 이메일 <b>%{email}</b> 로 암호 재설정에 필요한 정보가 전송되었습니다.
+        message: '이 재설정을 요청한 경우 아래 링크를 클릭하여 암호를 재설정하십시오.:'
+        reset_link: 비밀번호 변경
+        expire: 이 링크는 2시간 후에 만료됩니다.
+        ignore: 만약 당신이 이 요청을 하지 않았다면 무시하셔도 됩니다.
+      promoted:
+        admins_link: 구성원 관리 페이지 방문
+        info: 이제 %{url}에서 %{role}이(가) 되셨습니다.
+        more-info: 새로운 기능을 보려면 %{url}을(를) 방문하세요.
+        subtitle: "%{role} 권한 부여됨"
+      verify_email:
+        welcome: 개인 회의실에 오신 것을 환영합니다, %{name}!
+        success: 자신만의 룸을 %{bigbluebutton}을(를) 활용하여 만들어 세션을 주최하고 다른 사람들과 협업할 수 있습니다.
+        username: 사용자 계정 이메일은 %{email}입니다.
+        verify: 계정을 확인하려면 아래 단추를 클릭하세요.
+        verify_text: '계정을 확인하려면 다음 링크를 클릭하세요: %{url}'
+        verify_link: 계정 확인
+        thanks: 좋은 하루 되세요~!
+  max_concurrent: 허용된 최대 동시 세션 수에 도달했습니다!
+  merged: 병합
+  modal:
+    create_role:
+      create: 새 역할 만들기
+      footer_text: 이 역할을 만든 후 이 역할에 대한 개별 권한을 편집할 수 있습니다.
+      name_placeholder: 역할 이름 입력...
+      not_blank: 역할 이름은 비워 둘 수 없습니다.
+      title: 새 역할 만들기
+    create_room:
+      access_code: 액세스 코드
+      access_code_placeholder: 선택적 회의실 액세스 코드 생성
+      auto_join: 자동으로 회의실에 참여
+      create: 회의실 만들기
+      free_delete: 언제든지 이 방을 삭제할 수 있습니다.
+      name_placeholder: 회의실 이름 입력...
+      not_blank: 회의실 이름은 필수입니다.
+      title: 신규 회의실 만들기
+    delete_account:
+      confirm: 이 계정을 삭제하시겠습니까?
+      delete: 네, 이 계정을 삭제합니다.
+      keep: 나중을 위해 보관합니다.
+      delete_warning: 이렇게 하면 사용자의 계정이 비활성화 됩니다. 삭제된 모든 사용자는 삭제된 탭에서 찾을 수 있습니다.
+      warning: 이 결정은 최종입니다. 관련 데이터를 복구할 수 없음에 동의합니다.
+    delete_room:
+      confirm: "%{room}을(를) 삭제하시겠습니까?"
+      delete: 네, 삭제합니다.
+      keep: 나중을 위해 보관합니다.
+      warning: 삭제를 하게되면 <b>복원</b>이 불가합니다.
+      recording_warning: 또는 관련 기록 %{recordings_num}개 중 하나.
+    invite_user:
+      email_placeholder: 사용자의 이메일 입력(쉼표로 구분)
+      footer: 사용자에게 등록 방법에 대한 지침이 포함된 이메일이 수신되었습니다.
+      send: 초대장 보내기
+      title: 사용자 초대하기
+    login:
+      or: 또는
+      with: "%{provider}(으)로 로그인"
+      forgot_password: 비밀번호를 잊으셨나요?
+    preupload:
+      change: 프리젠테이션 바꾸기
+      choose: 파일 선택...
+      current: "현재 프레젠테이션:"
+      footer: 프리젠테이션 파일(.pdf) 크기에 따라 업로드에 추가 시간이 필요할 수 있습니다.
+      invalid: 잘못된 크기/파일 형식입니다. 아래 제한 사항을 참조하세요.
+      title: 프레젠테이션 추가
+      use: 프리젠테이션 사용
+    rename_recording:
+    remove_shared:
+      title: 회의실 목록에서 이 회의실을 삭제하시겠습니까?
+      delete: 네, 삭제합니다.
+      warning: 삭제를 하게되면 <b>복원</b>이 불가합니다.
+    room_settings:
+      title: 회의실 설정
+      update: 회의실 업데이트
+      client: 사용자 유형 선택
+      join_moderator: 모든 사용자가 진행자로 회의실 입장
+      mute: 입장할 때 사용자 음소거
+      require_approval: 입장하기 전에 진행자 승인 필요
+      start: 사용자가 이 미팅을 시작할 수 있도록 허용
+      footer_text: 회의실에 대한 설정정보 변경은 언제든지 할 수 있습니다.
+      recording: 회의실 녹화 허용
+    rename_room:
+      name_placeholder: 신규 회의실 이름 입력...
+    share_access:
+      footer: 사용자와 회의실을 공유하면 회의실을 시작하고 녹화영상을 볼 수 있습니다.
+      list: 공유 대상
+      title: 공유 회의실 액세스
+      save: 설정 저장
+      cancel_changes: 변경 취소
+      select: 사용자 선택
+    merge_user:
+      cancel: 취소
+      from: 병합할 계정
+      title: 사용자 계정 병합
+      to: 기본 계정
+      save: 병합
+      footer: 합병할 계정의 회의실은 1차 계정의 회의실 리스트로 넘어간 후 계정이 삭제됩니다.
+  name_update_success: 회의실 이름이 성공적으로 변경됨!
+  no_user_email_exists: 지정된 이메일을 가진 기존 사용자가 없습니다. 올바르게 입력했는지 확인하세요.
+  omniauth_error: 인증하는 동안 오류가 발생했습니다. 다시 시도하거나 관리자에게 문의하십시오!
+  omniauth_specific_error: "%{error} 인증하는 동안 문제가 발생했습니다. 다시 시도하거나 관리자에게 문의하세요!"
+  pagy:
+    nav:
+      prev: "&lsaquo; 이전"
+      next: "다음 &rsaquo;"
+      gap: "&hellip;"
+  password: 비밀번호
+  password_empty_notice: 비밀번호는 필수입니다.
+  password_reset_success: 비밀번호가 재설정되었습니다.
+  password_different_notice: 비밀번호와 확인용 비밀번호가 일치하지 않습니다.
+  provider:
+    google: 구글
+    office365: 오피스 365
+    twitter: 트위터
+    ldap: LDAP
+  recaptcha:
+    errors:
+      recaptcha_unreachable: reCAPTCHA 응답의 유효성 검사 응답이 없습니다. 다시 시도해주세요.
+      verification_failed: reCAPTCHA 승인에 실패했습니다, 다시 시도해주세요.
+  recording:
+    all_recordings: 모든 녹화목록
+    email: 이메일 녹화기록
+    error: "%{count}개의 기록을 검색하는 동안 오류가 발생했습니다."
+    no_recordings: 이 회의실에는 %{inject}개의 녹화영상이 없습니다.
+    no_user_recordings: 현재 녹화된 영상이 없습니다.
+    no_matched_recordings: 검색과 일치하는 %{inject}개의 녹화영상이 없습니다
+    recorded_on: "%{date}에 기록됨"
+    table:
+      name: 이름
+      thumbnails: 썸네일
+      length: 길이
+      users: 사용자
+      visibility: 가시성
+      formats: 형식
+    visibility:
+      public: 공개
+      unlisted: 목록에 없음
+    format:
+      notes: 메모
+      podcast: 팟캐스트
+      presentation: 프리젠테이션
+      statistics: 통계
+      video: 비디오
+  registration:
+    approval:
+      fail: 계정이 아직 승인되지 않았다. 등록일수가 여러 번 지난 경우 관리자에게 문의하세요.
+      signup: 계정이 성공적으로 생성되었습니다. 승인을 받기 위해 관련정보를 관리자에게 보냈습니다.
+    banned:
+      fail: 이 응용 프로그램에 대한 액세스 권한이 없습니다. 문의사항이 있으시면 관리자에게 문의하세요.
+    deprecated:
+      new_signin: 계정에 대한 새 로그인 방법을 선택하세요. 이전 계정의 모든 회의실이 새 계정으로 마이그레이션 됩니다.
+      twitter_signin: 트위터를 통해 로그인하는 것은 더 이상 사용되지 않으며 다음 버전에서는 삭제됩니다. 계정을 새 인증 방법으로 이동하려면 <a href="%{link}">여기</a>를 클릭하십시오.
+      twitter_signup: 트위터를 통한 가입은 더 이상 사용되지 않습니다. 다른 등록 방법을 사용하세요.
+      merge_success: 트위터 계정을 새 계정과 성공적으로 병합했습니다. 이전 트위터 계정은 삭제됩니다
+    invite:
+      fail: 토큰이 잘못되었거나 만료됐습니다. 문의사항이 있으시면 관리자에게 문의하세요.
+      no_invite: 초대장이 없는 경우. 관리자에게 문의하세요.
+  remove: Remove
+  rename: Rename
+  reset_password:
+    invalid_token: 암호 재설정 토큰이 잘못됐습니다. 암호를 다시 설정해 보세요.
+    subtitle: 암호 재설정
+    password: 새로운 비밀번호
+    confirm: 새로운 비밀번호 확인
+    update: 비밀번호 업데이트
+    auth_change: 인증 방법이 변경되었습니다. 암호를 설정하려면 이메일을 확인하세요.
+  roles:
+    active: 활동중
+    admin: 관리자
+    banned: 금지됨
+    deleted: 삭제됨
+    pending: 보류 중
+    user: 사용자
+  room:
+    access_code_required: 회의실에 가입하려면 유효한 액세스 코드를 입력하세요.
+    add_presentation: 프리젠테이션 추가
+    create_room: 회의실 생성
+    create_room_error: 회의실을 만드는 동안 오류가 발생했습니다.
+    create_room_success: 회의실 생성이 완료되었습니다.
+    delete:
+      home_room: 사용자의 기본 회의실은 삭제할 수 없습니다.
+      success: 회의실이 성공적으로 삭제됐습니다.
+      fail: 회의실 삭제 실패(%{error})
+    enter_the_access_code: 회의실 접근 코드 입력
+    invalid_provider: 잘못된 URL을 입력했습니다. URL을 확인한 후 다시 시도하세요.
+    invitation_description: 디지털대면 솔루션 루프(loop)를 사용하여 %{name}에 가입하도록 초대받으셨습니다. 가입하려면 위의 링크를 클릭하고 이름을 입력하세요.
+    invited: 귀하는 초대를 받았습니다.
+    recording_present: 본 회의실에 참여함에 관리자에 의해 영상이 녹화됨에 권한을 부여하고 인정하며 활성화할 경우 내 음성 및 비디오가 포함될 수 있음에 동의합니다.
+    invite_participants: 참가자 초대
+    join: 입장
+    last_session: "%{session}의 마지막 세션"
+    login: 로그인
+    owner: 소유자
+    owner_banned: 이 회의실은 현재 사용할 수 없습니다.
+    no_room:
+      description: 가입할 회의실의 URL 또는 ID를 입력하세요.
+      edit_profile: 사용자 정보 수정
+      go_to: 회의실로 이동
+      invalid_room_uid: 입력한 룸 url/uid가 올바르지 않습니다.
+      placeholder: 회의실 url/uid
+      no_recent_rooms: 최근에 가입한 회의실이 없는 경우
+      recent_rooms: 최근에 가입한 회의실로 이동
+      title: 회의실 입장
+    no_sessions: 이 회의실은 아직 수업이 없습니다!
+    preupload_success: 프레젠테이션 추가 완료
+    preupload_error: 프리젠테이션을 업데이트하는 동안 오류가 발생했습니다.
+    preupload_remove_success: 프레젠테이션 삭제 성공
+    preupload_remove_error: 룸 프리젠테이션을 삭제하는 동안 오류가 발생했습니다.
+    recordings: 회의실 녹화
+    room_limit: 허용된 최대 회의실 수에 도달했습니다.
+    room_limit_exceeded: 허용된 회의실 수를 초과했습니다. 이 회의실에 액세스하려면 %{difference}개의 회의실을 삭제하세요.
+    sessions: 세션
+    settings: 회의실 설정
+    share: 액세스 관리
+    shared_by: "%{email}이(가) 공유함"
+    remove_shared_access_success: 회의실 목록에서 공유된 회의실 제거 성공
+    remove_shared_access_error: 목록에서 공유된 회의실을 제거하는 동안 오류가 발생했습니다.
+    shared_access_success: 회의실 공유 성공
+    shared_access_error: 회의실을 공유하는 동안 오류가 발생했습니다.
+    start: 시작
+    unavailable: 이 회의실은 현재 소유자의 이메일이 확인되지 않아 사용할 수 없습니다.
+    update_settings_error: 회의실 설정을 업데이트하는 동안 오류가 발생했습니다.
+    update_settings_success: 회의실 설정이 성공적으로 업데이트됨
+    wait:
+      message: 아직 회의가 시작되지 않았습니다.
+      auto: 회의가 시작되면 자동으로 참여합니다.
+  settings:
+    account:
+      fullname: 이름
+      language: 언어
+      provider: 제공자
+      image: 이미지
+      image_url: 프로필 이미지 URL
+      roles: 사용자 역할
+      subtitle: 계정 정보 업데이트
+      title: 계정 정보
+      reset_password: 사용자 암호 재설정
+    delete:
+      button: 네, 제 계정을 삭제합니다.
+      disclaimer: 만약 당신이 당신의 계정을 삭제하기로 선택한다면, 설정, 회의실 및 기록을 포함하여 계정에 대한 모든 정보가 제거됩니다.
+      subtitle: 계정 영구 삭제
+      title: 계정 삭제
+    password:
+      confirmation: 새 비밀번호 확인
+      new: 새 비밀번호
+      old: 이전 비밀번호
+      subtitle: 비밀번호 변경
+      title: 비밀번호
+    title: 프로필
+    search: 검색
+  signup:
+    password_confirm: 암호 확인
+    subtitle: 계정 만들기
+    title: 신규등록
+    with: "%{provider}(으)로 등록"
+  terms:
+    accept: "%{href}을(를) 수락함"
+    accept_existing: 약관에 동의합니다.
+    title: 조건
+  test_install: >
+    이 배포는 미리 구성된 테스트 서버를 사용하고 있으므로, 이 서버를 자신의 서버로 교체하십시오.
+    자세한 내용은 %{href}를 참조하십시오.
+  update: 업데이트
+  verify:
+    accept: 승인
+    activated: 계정이 승인됨!
+    already_verified: 계정이 이미 승인됨
+    invalid: 잘못된 승인 링크
+    not_verified: 계정이 아직 승인되지 않았습니다.
+    resend: 승인요청 이메일 다시 보내기
+    signin: 계정에 액세스하려면 로그인하세요.
+    title: 이메일 확인
+    verification: 검증

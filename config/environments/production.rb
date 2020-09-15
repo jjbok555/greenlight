@@ -139,7 +139,7 @@ Rails.application.configure do
   end
 
   config.log_formatter = proc do |severity, _time, _progname, msg|
-    "#{severity}: #{msg} \n"
+    "#{_time}: #{severity}: #{msg} \n"
   end
 
   config.log_level = :info
