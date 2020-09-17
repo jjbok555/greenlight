@@ -132,12 +132,12 @@ class RoomsController < ApplicationController
     save_recent_rooms
     @client_ip = request.remote_ip
     #여기가 이름 찾아서 저장해야되는 위치
-    RoomLogData = RoomLog.new
-    RoomLogData.room_uid=@room.uid
-    RoomLogData.user_id=current_user.present? ? current_user.email : @join_name
-    RoomLogData.ip=@client_ip
-    RoomLogData.status="IN"
-    RoomLogData.save
+    rLogData = RoomLog.new
+    rLogData.room_uid=@room.uid
+    rLogData.user_id=current_user.present? ? current_user.email : @join_name
+    rLogData.ip=@client_ip
+    rLogData.status="IN"
+    rLogData.save
 
     logger.info "Support: #{current_user.present? ? current_user.email : @join_name} is joining room #{@room.uid},  #{@client_ip}"
     join_room(default_meeting_options)
