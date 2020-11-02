@@ -81,6 +81,7 @@
           <a class="dropdown-item email-link" data-pres-link="<%= recording_links %>"><i class="dropdown-icon far fa-envelope"></i> <%= t("recording.email") %></a>
           <div class="dropdown-divider"></div>
         <% end %>
+        <a class="dropdown-item" target="_blank" href="<%= "/presentation/"+ recording[:recordID] +"/video.mp4"%>"><i class="dropdown-icon fas fa-download"></i> 영상 다운로드 </a>
         <a href="" data-toggle="modal" data-target="#deleteRecordingModal" data-path="<%= delete_recording_path(meetingID: recording[:meetingID], record_id: recording[:recordID]) %>" class="delete-rec dropdown-item">
           <i class="dropdown-icon far fa-trash-alt"></i> <%= t("delete") %>
         </a>
